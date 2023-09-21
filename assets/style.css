@@ -2,16 +2,10 @@ body {
   font-family: sans-serif;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin: 20px;
-}
-
 #content {
-  width: 600px;
-  margin: 60px auto;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #content p {
@@ -20,23 +14,11 @@ body {
 }
 
 #logomark {
-  position: absolute;
-  top: 15px;
-  left: 15px;
   font-family: ui-monospace, Consolas, Menlo, Monaco, "Cascadia Mono",
     "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
     "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
   font-size: 30px;
-}
-
-#about {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-#about a {
-  text-decoration: none;
+  margin-bottom: 25px;
 }
 
 #logomark img {
@@ -44,110 +26,4 @@ body {
   height: 40px;
   margin-right: 5px;
   vertical-align: bottom;
-}
-
-.comparison {
-  text-align: center;
-  margin: 0 20px;
-}
-
-.thumbnails th,
-.thumbnails td {
-  padding: 10px;
-}
-
-.thumbnails th {
-  cursor: pointer;
-}
-
-.thumbnails img {
-  max-height: 150px;
-  max-width: 150px;
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-.bigthumb {
-  max-height: 200px !important;
-  max-width: 200px !important;
-}
-
-.zoomable {
-  border: 1px solid white;
-}
-.zoomable:active {
-  transform: scale(2.5);
-  border: 1px solid lightgray;
-}
-
-.singleWrapper {
-  border: 1px solid lightgray;
-  padding: 0 10px;
-  border-radius: 3px;
-}
-
-.regular_thumb {
-  border: 2px solid white;
-}
-.selected_thumb {
-  border: 2px solid red;
-}
-
-pre {
-  font-size: 11px;
-  font-family: Menlo, Monaco, Consolas;
-  line-height: 1.5 !important;
-}
-
-details[open] {
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding-bottom: 3px;
-  padding-top: 3px;
-}
-
-details {
-  padding-bottom: 5px;
-  padding-top: 4px;
-}
-
-summary {
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-}
-
-td .editlink {
-  display: none;
-}
-
-td:hover .editlink {
-  display: block;
-  text-decoration: none;
-  color: grey;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-}
-
-.tooltip {
-  width: 100px;
-  height: 100px;
-  padding: 0;
-  margin: 0;
-}
-
-.tooltip2 {
-  width: 200px;
-  height: 100px;
-  padding: 0;
-  margin: 0;
-}
-
-.tooltip_image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin: 0;
 }
